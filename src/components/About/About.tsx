@@ -23,7 +23,7 @@ const About = () => {
           <div className={styles.infoList}>
             <div className={styles.infoItem}>
               <span className={styles.icon}>
-                <Calendar size={20} />
+                <Calendar size={30} />
               </span>
               <span>
                 <strong>Date of Birth:</strong> January 1, 1989
@@ -31,7 +31,7 @@ const About = () => {
             </div>
             <div className={styles.infoItem}>
               <span className={styles.icon}>
-                <MapPin size={20} />
+                <MapPin size={30} />
               </span>
               <span>
                 <strong>Location:</strong> Kathmandu, Nepal
@@ -39,7 +39,7 @@ const About = () => {
             </div>
             <div className={styles.infoItem}>
               <span className={styles.icon}>
-                <Mail size={20} />
+                <Mail size={30} />
               </span>
               <span>
                 <strong>Email:</strong>{" "}
@@ -48,19 +48,13 @@ const About = () => {
             </div>
             <div className={styles.infoItem}>
               <span className={styles.icon}>
-                <Phone size={20} />
+                <Phone size={30} />
               </span>
               <span>
                 <strong>Phone:</strong> +977-984XXXXXXX
               </span>
             </div>
           </div>
-
-          {/* CTA Section */}
-          {/* <div className={styles.cta}>
-            <a href="/resume.pdf" download>Download Resume</a>
-            <a href="https://linkedin.com/in/uddhavdahal " target="_blank">Connect on LinkedIn</a>
-          </div> */}
         </div>
       </div>
     </section>

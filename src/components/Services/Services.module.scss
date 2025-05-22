@@ -1,0 +1,30 @@
+.services {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  .servicesWrapper{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-family: "YourCustomFont", sans-serif; // Replace with your custom font
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+  }
+
+  .serviceCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+}

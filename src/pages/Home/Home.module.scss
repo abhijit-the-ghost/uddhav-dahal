@@ -1,0 +1,36 @@
+.banner {
+  min-height: 20vh;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.myStats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statItem {
+  flex: 1 1 200px;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 500;
+  }
+}
