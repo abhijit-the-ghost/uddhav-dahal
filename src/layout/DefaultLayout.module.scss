@@ -11,7 +11,7 @@
 
 .navbar {
   background: var(--card-background);
-  padding: 1rem 0;
+  padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -34,16 +34,26 @@
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 2rem;
   font-weight: 600;
   color: var(--primary-color);
   text-decoration: none;
   font-family: var(--font-heading);
-  // transition: color 0.2s step-end;
-  // &:hover{
-  //   color: var(--secondary-color);
 
-  // }
+  .logoImage {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: rotate(10deg);
+    }
+  }
 }
 
 .desktopMenu {
