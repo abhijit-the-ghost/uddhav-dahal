@@ -1,7 +1,16 @@
 import About from "../../components/About/About";
+import Blog from "../../components/Cards/Blog/Blog";
 import Hero from "../../components/Hero/Hero";
 import Services from "../../components/Services/Services";
 import styles from "./Home.module.scss";
+
+const Blogs = [
+  {
+    title: "Agile Practices",
+    description: "How Agile helps teams deliver better software faster",
+    image: "",
+  },
+];
 
 const Home = () => {
   return (
@@ -36,7 +45,25 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>blogs</section>
+      <section className={styles.blog}>
+        <div className={styles.blogWrapper}>
+          <h1>Blogs</h1>
+          <div className={styles.blogCards}>
+            <Blog
+              title="Agile Practices"
+              description="How Agile helps teams deliver better software faster."
+            />
+            <Blog
+              title="Data Visualization Tips"
+              description="Turning complex data into clear insights with Power BI."
+            />
+            <Blog
+              title="Project Planning 101"
+              description="Key strategies for managing timelines and resources."
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -34,3 +34,28 @@
     font-weight: 500;
   }
 }
+
+.blog {
+  padding: 5rem 2rem;
+  background-color: var(--section-background);
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+  }
+
+  .blogWrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .blogCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 2rem;
+  }
+}
