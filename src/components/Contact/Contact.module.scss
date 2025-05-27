@@ -1,0 +1,168 @@
+.contactSection {
+  //   padding: var(--section-padding) 1rem;
+  background-color: var(--card-background);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contactContainer {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+//   background: var(--card-background);
+//   border-radius: var(--border-radius);
+//   box-shadow: var(--box-shadow);
+}
+
+.contactContainer h2 {
+  font-family: var(--font-heading);
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.formInput {
+  width: 100%;
+  padding: 1rem 5px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  background: transparent;
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(132, 145, 251, 0.2);
+  }
+
+  // Hide default placeholder text
+  &::placeholder {
+    opacity: 0;
+  }
+}
+
+.floatingLabel {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--muted-text);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: var(--card-background);
+  padding: 0 0.25rem;
+  margin-left: 4px;
+}
+
+// When input is focused or has value, move label up
+.formInput:focus + .floatingLabel,
+.formInput:not(:placeholder-shown):not([value=""]) + .floatingLabel {
+  transform: translateY(-1.9rem);
+  font-size: 0.85rem;
+  color: var(--primary-color);
+}
+.floatingLabelMessage {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  //   transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--muted-text);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: var(--card-background);
+  padding: 0 0.25rem;
+  margin-left: 4px;
+  transform: translateY(-3.9rem);
+  font-size: 0.85rem;
+  color: var(--primary-color);
+}
+// .floatingLabel
+
+.inputError {
+  border-color: #ff4d4f !important;
+}
+
+.inputError + .floatingLabel {
+  color: #ff4d4f;
+}
+
+.errorText {
+  color: #ff4d4f;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  position: absolute;
+  bottom: -1.9rem;
+  left: 0;
+}
+
+.formInput[type="textarea"] {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: center;
+  min-width: 150px;
+
+  &:hover {
+    // background-color: darken(var(--primary-color), 10%);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .contactSection {
+    padding: 2rem 1rem;
+  }
+
+  .contactContainer {
+    padding: 1.5rem;
+  }
+
+  .contactContainer h2 {
+    font-size: 1.75rem;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}

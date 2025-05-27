@@ -1,16 +1,17 @@
 import About from "../../components/About/About";
 import Blog from "../../components/Cards/Blog/Blog";
+import Contact from "../../components/Contact/Contact";
 import Hero from "../../components/Hero/Hero";
 import Services from "../../components/Services/Services";
 import styles from "./Home.module.scss";
 
-const Blogs = [
-  {
-    title: "Agile Practices",
-    description: "How Agile helps teams deliver better software faster",
-    image: "",
-  },
-];
+// const Blogs = [
+//   {
+//     title: "Agile Practices",
+//     description: "How Agile helps teams deliver better software faster",
+//     image: "",
+//   },
+// ];
 
 const Home = () => {
   return (
@@ -63,6 +64,9 @@ const Home = () => {
             />
           </div>
         </div>
+      </section>
+      <section>
+        <Contact />
       </section>
     </>
   );

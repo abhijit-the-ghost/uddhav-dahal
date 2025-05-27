@@ -1,34 +1,14 @@
 :root {
   /* 🎨 Brand Colors */
-  --primary-color: #8491FB; // Dodger Blue - strong highlight
-  --secondary-color: #ffb347; // Soft Orange - for accents
-  --accent-color: #4caf50; // Subtle Green - optional
-
-  /* 🖌️ Backgrounds */
-  --background-color: #f9fafc; // Ultra-light background
-  --card-background: #ffffff; // For cards or containers
-  --hero-background: #e7e9f8; // Slight blue tint for hero sections
-
-  /* 🔤 Text */
-  --text-color: #1a1a1a; // Almost black, easier on eyes
-  --muted-text: #666666; // For subtitles or secondary text
-  --link-color: var(--primary-color);
-  --heading-color: #121212;
-
-  /* 🧱 Borders & Shadows */
+  --primary-color: #8491fb; /* Dodger Blue - strong highlight */
+  --secondary-color: #ffb347; /* Soft Orange - for accents */
+  --accent-color: #4caf50; /* Subtle Green - optional */
+  --background-color: #f9fafc; /* Ultra-light background */
+  --card-background: #ffffff; /* For cards or containers */
+  --text-color: #1a1a1a; /* Almost black, easier on eyes */
+  --muted-text: #666666; /* For subtitles or secondary text */
   --border-color: #dddddd;
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-
-  /* 🔠 Fonts */
   --font-primary: "Poppins", sans-serif;
-  --font-heading: "Montserrat", sans-serif;
-
-  /* 📐 Spacing */
-  --section-padding: 4rem;
   --border-radius: 12px;
-}
-
-[data-theme="dark"] {
-  --primary-color: #111;
-  --secondary-color: #888;
 }
