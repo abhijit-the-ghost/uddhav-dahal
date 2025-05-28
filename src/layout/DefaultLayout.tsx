@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Twitter, Youtube } from "lucide-react";
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "./DefaultLayout.module.scss";
@@ -63,14 +63,53 @@ const DefaultLayout = () => {
 
       {/* Footer */}
       <footer className={styles.footer}>
-        <p>© {new Date().getFullYear()} Uddhav Dahal. All rights reserved.</p>
-        <div className={styles.socials}>
-          <a href="https://github.com " target="_blank" rel="noreferrer">
-            <Github />
-          </a>
-          <a href="https://linkedin.com " target="_blank" rel="noreferrer">
-            <Linkedin />
-          </a>
+        <div className={styles.footerContent}>
+          <p>© {new Date().getFullYear()} Uddhav Dahal. All rights reserved.</p>
+          <div className={styles.socials}>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Uddhav Dahal's GitHub profile"
+            >
+              <Github size={30} />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Uddhav Dahal's LinkedIn profile"
+            >
+              <Linkedin size={30} />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Uddhav Dahal's Twitter profile"
+            >
+              <Twitter size={30} />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Uddhav Dahal's Twitter profile"
+            >
+              <Youtube size={30} />
+            </a>
+          </div>
+          <nav className={styles.footerNav}>
+            <a href="/privacy" aria-label="Privacy Policy">
+              Privacy Policy
+            </a>
+            <a href="/terms" aria-label="Terms of Service">
+              Terms of Service
+            </a>
+            <a href="/contact" aria-label="Contact Me">
+              Contact
+            </a>
+          </nav>
         </div>
       </footer>
     </div>

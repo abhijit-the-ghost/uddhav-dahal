@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Calendar } from "lucide-react";
 import styles from "./About.module.scss";
 import uddhavDahalImg from "../../assets/uddhavImageAbout.jpeg";
 
-const About = () => {
+const AboutComponent = () => {
   return (
     <section className={styles.about}>
       <div className={styles.aboutContainer}>
@@ -61,4 +61,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutComponent;
