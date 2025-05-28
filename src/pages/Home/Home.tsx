@@ -16,13 +16,13 @@ import styles from "./Home.module.scss";
 const Home = () => {
   return (
     <>
-      <section>
+      <section id="home">
         <Hero />
       </section>
-      <section>
+      <section id="about">
         <About />
       </section>
-      <section>
+      <section id="services">
         <Services />
       </section>
       <section className={styles.banner}>
@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section id="contact">
         <Contact />
       </section>
     </>

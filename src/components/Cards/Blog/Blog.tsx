@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./Blog.module.scss";
 
 const Blog = ({
@@ -6,8 +7,13 @@ const Blog = ({
   image = "https://picsum.photos/200/300",
   date = "May 23, 2025",
 }) => {
+  const navigate = useNavigate();
+
+  const handleBlogNavigate = () => {
+    navigate("/blog");
+  };
   return (
-    <div className={styles.blogCard}>
+    <div className={styles.blogCard} onClick={handleBlogNavigate}>
       <div className={styles.imageContainer}>
         <img src={image} alt={title} className={styles.blogImage} />
       </div>
