@@ -1,4 +1,7 @@
 import AboutComponent from "../../components/About/About";
+import HireMe from "../../components/HireMe/HireMe";
+import Interest from "../../components/Interests/Interest";
+import Values from "../../components/Values/Values";
 import styles from "./About.module.scss";
 
 const About = () => {
@@ -41,13 +44,27 @@ const About = () => {
             <div key={index} className={styles.timelineItem}>
               <div className={styles.timelineContent}>
                 <h3>{exp.role}</h3>
-                <h4>{exp.company} — {exp.duration}</h4>
+                <h4>
+                  {exp.company} — {exp.duration}
+                </h4>
                 <p className={styles.location}>{exp.location}</p>
                 <p>{exp.description}</p>
               </div>
             </div>
           ))}
         </div>
+      </section>
+      {/* My interests */}
+      <section>
+        <Interest />
+      </section>
+      {/* My Values */}
+      <section>
+        <Values />
+      </section>
+      {/* Hire me section */}
+      <section>
+        <HireMe />
       </section>
     </>
   );

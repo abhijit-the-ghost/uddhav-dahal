@@ -1,20 +1,22 @@
 .blogCard {
   background-color: var(--card-background);
-  border-radius: 10px;
+  border-radius: 20px 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   max-width: 350px;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
-  &:hover{
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    scale: 1.02;
 
+  &:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
   }
 }
 
 .imageContainer {
+  position: relative;
   overflow: hidden;
   height: 200px;
 }
@@ -27,7 +29,19 @@
 }
 
 .blogCard:hover .blogImage {
-  transform: scale(1.05);
+  transform: scale(1.03);
+}
+
+.categoryTag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
 }
 
 .blogContent {
@@ -36,18 +50,29 @@
 
 .blogTitle {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #333;
+  margin-bottom: 0.25rem;
+  color: var(--heading-color);
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
 }
 
 .blogDescription {
   font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
 }
 
-.blogDate {
+.readMore {
   font-size: 0.85rem;
-  color: #999;
-  font-style: italic;
+  font-weight: 500;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

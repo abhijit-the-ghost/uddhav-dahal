@@ -3,6 +3,9 @@ import DefaultLayout from "../layout/DefaultLayout";
 import Home from "../pages/Home/Home";
 import BlogDetail from "../pages/BlogDetail/BlogDetail";
 import About from "../pages/About/About";
+import PageNotFound from "../pages/PageNotFound/PageNotFound";
+import Blogs from "../pages/Blogs/Blogs";
+import ContactPage from "../pages/Contact/ContactPage";
 
 const routes = createBrowserRouter([
   {
@@ -18,10 +21,22 @@ const routes = createBrowserRouter([
         element: <About />,
       },
       {
+        path: "/blogs",
+        element: <Blogs />,
+      },
+      {
         path: "/blog",
         element: <BlogDetail />,
       },
+      {
+        path: "/contact",
+        element: <ContactPage />,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <PageNotFound />,
   },
 ]);
 

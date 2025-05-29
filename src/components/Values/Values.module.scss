@@ -1,0 +1,83 @@
+.valuesSection {
+  padding: 5rem 2rem;
+  background-color: var(--section-background);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.valuesWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 2.5rem;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.valuesList {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.valueCard {
+  background-color: var(--card-background);
+  border-radius: 10px 30px;
+  padding: 2rem 2rem;
+  box-shadow: var(--box-shadow);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.valueIcon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+
+  .valueCard:hover & {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .valuesList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valueCard {
+    width: 90%;
+  }
+}

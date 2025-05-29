@@ -1,0 +1,94 @@
+.hireMeSection {
+  padding: 5rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.hireMeContainer {
+  max-width: 700px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: var(--text-muted);
+  }
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2.5rem;
+}
+
+.skillItem {
+  background-color: var(--card-background);
+  border-radius: 9999px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: translateY(-2px);
+  }
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.downloadBtn,
+.contactBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--primary-color);
+}
+
+.downloadBtn {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color)
+  }
+}
+
+.contactBtn {
+  color: var(--primary-color);
+  background-color: transparent;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+}

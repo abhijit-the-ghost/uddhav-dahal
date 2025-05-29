@@ -1,0 +1,46 @@
+.blogsSection {
+  padding: 5rem 2rem;
+  background-color: var(--section-background);
+  color: var(--text-color);
+}
+
+.blogsWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  background-color: var(--card-background);
+  color: var(--text-color);
+
+  &:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.noResults {
+  color: var(--text-muted);
+  font-size: 1rem;
+}

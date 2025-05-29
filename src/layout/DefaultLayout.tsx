@@ -27,7 +27,7 @@ const DefaultLayout = () => {
           <nav className={styles.desktopMenu}>
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/blogs">Blogs</Link>
             <Link to="/contact">Contact</Link>
           </nav>
           <button
@@ -46,8 +46,8 @@ const DefaultLayout = () => {
             <Link to="/about" onClick={toggleMenu}>
               About
             </Link>
-            <Link to="/portfolio" onClick={toggleMenu}>
-              Portfolio
+            <Link to="/blogs" onClick={toggleMenu}>
+              Blogs
             </Link>
             <Link to="/contact" onClick={toggleMenu}>
               Contact
