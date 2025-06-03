@@ -14,7 +14,7 @@ const HireMe = () => {
   return (
     <section className={styles.hireMeSection}>
       <div className={styles.hireMeContainer}>
-        <h2>Let’s Collaborate</h2>
+        <h2>Let's Collaborate</h2>
         <p>
           Certified Scrum Master & Technical Project Manager with 6+ years in software development.
         </p>

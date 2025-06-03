@@ -1,0 +1,9 @@
+.adminContainer {
+  display: flex;
+  min-height: 100vh;
+  .adminMain {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--background);
+  }
+}

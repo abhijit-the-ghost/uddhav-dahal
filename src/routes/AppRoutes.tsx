@@ -6,6 +6,9 @@ import About from "../pages/About/About";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import Blogs from "../pages/Blogs/Blogs";
 import ContactPage from "../pages/Contact/ContactPage";
+import AdminLayout from "../layout/Adminlayout/AdminLayout";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import BlogList from "../pages/BlogList/BlogList";
 
 const routes = createBrowserRouter([
   {
@@ -37,6 +40,20 @@ const routes = createBrowserRouter([
   {
     path: "*",
     element: <PageNotFound />,
+  },
+  {
+    path: "/admin",
+    element: <AdminLayout />,
+    children: [
+      {
+        index: true,
+        element: <Dashboard />,
+      },
+      {
+        path: "/admin/blog",
+        element: <BlogList />,
+      },
+    ],
   },
 ]);
 

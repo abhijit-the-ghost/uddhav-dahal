@@ -1,0 +1,52 @@
+.tableWrapper {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: var(--card-background);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  font-size: 0.95rem;
+
+  thead {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+
+  th,
+  td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  th {
+    font-weight: 600;
+  }
+
+  tbody {
+    tr {
+      border-top: 1px solid #1a1a1a3a;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: var(--card-background);
+      }
+    }
+
+    td {
+      color: var(--text-color);
+    }
+  }
+}
+
+.emptyMessage {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted-text);
+  font-style: italic;
+}

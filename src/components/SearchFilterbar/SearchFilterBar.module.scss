@@ -1,0 +1,43 @@
+/* components/SearchFilterBar/SearchFilterBar.module.scss */
+
+.container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchSection{
+  display: flex;
+  align-items: center;
+  flex: 1 1 200px;
+  flex-grow: 1;
+  // padding: 0.5rem 1rem;
+}
+
+.searchInput {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 150px;
+  font-size: 1rem;
+}
+
+.filterLabel {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.labelText {
+  font-size: 0.75rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.selectInput {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
