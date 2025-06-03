@@ -1,10 +1,13 @@
 import Contact from "../../components/Contact/Contact";
+import styles from "./Contact.module.scss";
 
 const ContactPage = () => {
   return (
     <>
-      <div>
-        <Contact />
+      <div className={styles.contactPage}>
+        <div>
+          <Contact />
+        </div>
       </div>
     </>
   );
