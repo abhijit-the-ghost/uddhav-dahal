@@ -1,3 +1,4 @@
+import { BadgeCheck, Coffee, FolderCheck, Radar } from "lucide-react";
 import About from "../../components/About/About";
 import Blog from "../../components/Cards/Blog/Blog";
 import Contact from "../../components/Contact/Contact";
@@ -28,19 +29,22 @@ const Home = () => {
       <section className={styles.banner}>
         <div className={styles.myStats}>
           <div className={styles.statItem}>
+            <BadgeCheck size={40} />
             <h2>10+</h2>
             <p>Certificate</p>
           </div>
           <div className={styles.statItem}>
+            <Radar size={40} />
             <h2>7+</h2>
             <p>Years of Experience</p>
           </div>
           <div className={styles.statItem}>
+            <FolderCheck size={40} />
             <h2>50+</h2>
             <p>Projects Delivered</p>
           </div>
-
           <div className={styles.statItem}>
+            <Coffee size={40} />
             <h2>2353</h2>
             <p>Cup Of Coffee</p>
           </div>

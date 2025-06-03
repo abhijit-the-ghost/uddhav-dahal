@@ -6,32 +6,33 @@
   border-radius: 12px 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: var(--card-background);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: 300px;
   cursor: default;
 
   &:hover {
     background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
     color: var(--background-color);
-    .iconContainer{
-      transform: translate( 30px);
+    .iconContainer {
+      transform: translate(-3rem);
       .icon {
-      background-color: var(--background-color);
-      color: var(--primary-color);
+        box-shadow: -10px 0 12px rgba(0, 0, 0, 0.1);
+        background-color: var(--background-color);
+        color: var(--primary-color);
+      }
     }
-    }
-
-
-    .title,
-    .description {
-      color: var(--background-color);
+    .content {
+      .title,
+      .description {
+        color: var(--background-color);
+      }
     }
   }
 
   .iconContainer {
     margin-bottom: 16px;
     transition: all 0.3s ease-in-out;
-
   }
 
   .icon {
